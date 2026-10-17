@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <nav style="display: flex; justify-content:  space-between; align-items: center; background-color: #333; padding: 10px;">
+    <a  style="text-decoration: none; color: white;" href="/login">Login</a>
+    <a style="text-decoration: none; color: white;" href="/register">Register</a>
+    <a style="text-decoration: none; color: white;" href="/dashboard">Dashboard</a>
+    <a style="text-decoration: none; color: white;" href ="/logout">Logout</a>
+    <a style="text-decoration: none; color: white;" href="/all-leave">ALL LEAVES</a>
+    <button style="background-color: #4CAF50; border-radius: 5px; color: white; padding: 10px 20px; border: none; cursor: pointer;" onclick="applyLeave()">APPLY LEAVE</button>
+</nav>
+<div >
+    <%data.forEach(detail)=>{ %>
+<h1>
+    <%= detail.name %>
+</h1>
+    }
+</div>
+</body>
+</html>

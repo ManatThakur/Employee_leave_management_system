@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: #f4f4f4; font-family: Arial, sans-serif;">
+    <nav style="display: flex; justify-content:  space-between; align-items: center; background-color: #333; padding: 10px;">
+    <a  style="text-decoration: none; color: white;" href="/login">Login</a>
+    <a style="text-decoration: none; color: white;" href="/register">Register</a>
+    <a style="text-decoration: none; color: white;" href ="/logout">Logout</a>
+    <a style="text-decoration: none; color: white;" href="/all-leave">ALL LEAVES</a>
+    
+</nav>
+       <h1 style="text-align: center; font-family: Arial, sans-serif; font-weight: bold;">Apply Leave Form</h1>
+    <div style="display: flex; justify-content: center; align-items: center; height: 100vh;">
+ <form style="display: flex; flex-direction: column; width: 300px; padding: 20px; border: 1px solid #ccc; border-radius: 5px; border-width: 5px;">
+    <input type="text" placeholder="Enter your name" required><br><br>
+    <input type="text" placeholder="Enter employee id" required><br><br>
+    <input type="text" placeholder="Enter your department" required><br><br>
+    <list style="list-style-type: none; padding: 0;">
+        <li>
+            <label for="leaveType">Leave Type:</label>
+            <select id="leaveType" required>
+                <option  value="">Select leave type</option>
+                <option  value="sick">Sick Leave</option>
+                <option value="casual">Casual Leave</option>
+                <option value="earned">Earned Leave</option>
+            </select>
+            </li><br><br>
+            <div style="margin-top: 10px;">
+                <label for="reason">Reason:</label>
+                <textarea  style="width: 100%; padding: 10px;" id="reason" placeholder="Enter reason for leave" required></textarea>
+                </div>
+<div style="margin-top: 10px;">
+                <label for="startDate">Start Date:</label>
+            <input type="date" placeholder="Start Date" required><br><br>
+            <label for="endDate">End Date:</label>
+            <input type="date" placeholder="End Date" required><br><br>
+        </div>
+ <button type="submit" style="background-color: #4CAF50; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;" onclick="submitForm()">Submit</button>
+    </list>
+ </form>
+    </div>
+</body>
+<script>
+    function submitForm() {
+        windows.location.href='/all-leave';
+    }
+</script>
+</html>

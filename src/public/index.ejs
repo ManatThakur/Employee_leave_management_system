@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    // empl leave management sysytem
+<nav style="display: flex; justify-content:  space-between; align-items: center; background-color: #333; padding: 10px;">
+    <a  style="text-decoration: none; color: white;" href="/login">Login</a>
+    <a style="text-decoration: none; color: white;" href="/register">Register</a>
+    <a style="text-decoration: none; color: white;" href="/dashboard">Dashboard</a>
+    <a style="text-decoration: none; color: white;" href ="/logout">Logout</a>
+    <a style="text-decoration: none; color: white;" href="/all-leave">ALL LEAVES</a>
+    <button style="background-color: #4CAF50; border-radius: 5px; color: white; padding: 10px 20px; border: none; cursor: pointer;" onclick="applyLeave()">APPLY LEAVE</button>
+</nav>
+<image style="height: 700px; width: 100%;" src="https://trackobit.com/wp-content/uploads/Leave-Attendance-Management-System-How-Does-it-Help-HR-Managers.jpg"></image>
+<footer style="background-color: #333; padding: 10px; color:azure; text-align: center;">
+    <p>&copy; 2023 Employee Leave Management System. All rights reserved.</p>
+    <p>Created with ❤️ for efficient leave management.</p>
+    <p>Contact us at info@employeemanagement.com</p>
+</footer>
+</body>
+<script>
+ 
+    const applyLeaveButton = document.querySelector('button');
+         function applyLeave() {
+            window.location.href = '/apply-leave';
+         }
+    </script>
+</html>
